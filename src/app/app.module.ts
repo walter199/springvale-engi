@@ -10,6 +10,9 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+
+
 
 @NgModule({
   declarations: [
@@ -20,11 +23,13 @@ import { FooterComponent } from './pages/footer/footer.component';
     ProjectsComponent,
     ContactComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

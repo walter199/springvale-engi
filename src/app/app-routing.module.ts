@@ -1,3 +1,4 @@
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -12,7 +13,9 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent },
   {path: 'contact', component: ContactComponent },
   {path: 'projects', component: ProjectsComponent },
-  {path: 'services', component: ServicesComponent }
+  {path: 'services', component: ServicesComponent },
+  {path: '404', component: NotFoundComponent},
+  {path: '**', redirectTo: '/404'}
 ];
 
 @NgModule({
